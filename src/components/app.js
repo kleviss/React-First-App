@@ -1,9 +1,21 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import SearchBar from "../containers/search_bar";
+import WeatherList from "../containers/weather_list";
 
 export default class App extends Component {
   render() {
     return (
-      <div>React simple starter</div>
+      <div>
+        <div style={{ margin: 20 }}>
+          <h1>
+            <center>
+              Weather in 5 days - openWeather<span>by Klevis</span>{" "}
+            </center>
+          </h1>
+        </div>
+        <SearchBar />
+        <WeatherList />
+      </div>
     );
   }
 }
